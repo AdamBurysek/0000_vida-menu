@@ -3,6 +3,7 @@ interface GameProps {
   setGameStarts: (value: boolean) => void;
   gameStarts: boolean;
   isActive: boolean;
+  color: string;
 }
 
 function AppGame(props: GameProps) {
@@ -38,6 +39,13 @@ function AppGame(props: GameProps) {
           onClick={handleShowUiClick}
         >
           Show/Hide UI
+        </button>
+        <button
+          className="test-button"
+          disabled
+          style={{ backgroundColor: props.color }}
+        >
+          Section Color
         </button>
       </div>
     </div>

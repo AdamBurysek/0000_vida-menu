@@ -15,6 +15,7 @@ function Game(props: any) {
       setGameStarts={props.setGameStarts}
       gameStarts={props.gameStarts}
       isActive={props.isActive}
+      color={props.sectionInfo.color}
     ></AppGame>
   );
 }

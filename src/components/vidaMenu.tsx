@@ -9,6 +9,9 @@ interface AdditionalGameProps {
   language: string;
   activePage: string;
   setGameStarts: () => void;
+  sectionInfo: {
+    color: any;
+  };
 }
 
 function VidaMenu({ children, setup }: any) {
@@ -72,6 +75,7 @@ function VidaMenu({ children, setup }: any) {
         language,
         isActive,
         activePage,
+        sectionInfo: { color: sectionInfo.color },
       } as AdditionalGameProps);
     }
     return child;

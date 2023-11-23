@@ -9,6 +9,10 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdamBurysek/0000_vida-menu"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
