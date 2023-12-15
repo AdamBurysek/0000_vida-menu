@@ -1,9 +1,9 @@
 import SideButton from "../components/sideButton";
-import { CzechImage, EnglishImage, DeutschImage } from "../img/languageImages";
 import MapButton from "../components/mapButton";
 import SectionBadge from "../components/sectionBadge";
-import "../App.css";
 import BlackPage from "./blackPage";
+import { CzechImage, EnglishImage, DeutschImage } from "../img/languageImages";
+import "../App.css";
 
 interface UserInterfaceProps {
   children: React.ReactNode;
@@ -34,7 +34,7 @@ const UserInterface: React.FC<UserInterfaceProps> = ({
             <SectionBadge
               sectionInfo={sectionInfo}
               language={language}
-            ></SectionBadge>
+            />
             <h1 className="top-bar_heading">
               {language === "cz" && setup.label.cz}
               {language === "en" && setup.label.en}
@@ -44,9 +44,9 @@ const UserInterface: React.FC<UserInterfaceProps> = ({
               className="language_select"
               onClick={handleLanguageClick}
             >
-              {language === "de" && <CzechImage></CzechImage>}
-              {language === "cz" && <EnglishImage></EnglishImage>}
-              {language === "en" && <DeutschImage></DeutschImage>}
+              {language === "de" && <CzechImage />}
+              {language === "cz" && <EnglishImage />}
+              {language === "en" && <DeutschImage />}
             </button>
           </div>
           <div className={gameStarts ? "side-bar side-bar_hide" : "side-bar"}>
@@ -56,32 +56,32 @@ const UserInterface: React.FC<UserInterfaceProps> = ({
               activePage={activePage}
               language={language}
               onClick={handleSideButtonClick}
-            ></SideButton>
+            />
             <SideButton
               color={sectionInfo.color}
               className={"how-to"}
               activePage={activePage}
               language={language}
               onClick={handleSideButtonClick}
-            ></SideButton>
+            />
             <SideButton
               color={sectionInfo.color}
               className={"know-more"}
               activePage={activePage}
               language={language}
               onClick={handleSideButtonClick}
-            ></SideButton>
+            />
           </div>
           <div className={gameStarts ? "map map_hide" : "map"}>
             <MapButton
               onClick={handleSideButtonClick}
               activePage={activePage}
               language={language}
-            ></MapButton>
+            />
           </div>
         </div>
         <div>{children}</div>
-        <BlackPage></BlackPage>
+        <BlackPage />
       </div>
     </>
   );

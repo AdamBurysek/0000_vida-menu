@@ -1,13 +1,6 @@
 import AppGame from "./App-Game";
 import "./Game.css";
 
-// interface GameProps {
-//   language: string;
-//   setGameStarts: (value: boolean) => void;
-//   gameStarts: boolean;
-//   isActive: boolean;
-// }
-
 function Game(props: any) {
   return (
     <AppGame

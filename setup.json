@@ -1,5 +1,4 @@
 {
-  "server": false,
   "id": "131",
   "section": "planet",
   "label": {
@@ -7,9 +6,6 @@
     "en": "exhibition title",
     "de": "Ausstellungstitel"
   },
-  "x": 50,
-  "y": 50,
-  "inactivityTimeoutInMin": 3.5,
-  "port": "/dev/ttyUSB0",
-  "baudrate": 9600
+  "exhibitPostion": { "x": 315, "y": 210 },
+  "inactivityTimeoutInMin": 3.5
 }

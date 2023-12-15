@@ -1,7 +1,7 @@
-import UserInterface from "../components/userInterface";
 import React, { useEffect, useState } from "react";
-import MapPage from "../components/mapPage";
 import { findSection, switchLanguage } from "../utils/functions";
+import UserInterface from "../components/userInterface";
+import MapPage from "../components/mapPage";
 
 interface AdditionalGameProps {
   gameStarts: boolean;
@@ -99,7 +99,9 @@ function VidaMenu({ children, setup }: any) {
         <MapPage
           activePage={activePage}
           language={language}
-        ></MapPage>
+          exhibitPostion={setup.exhibitPostion}
+          sectionColor={sectionInfo.color}
+        />
       </div>
     </>
   );

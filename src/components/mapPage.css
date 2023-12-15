@@ -12,11 +12,12 @@
 
 .map_content {
   position: absolute;
-  top: 250px;
-  left: 50px;
-  width: 1600px;
+  top: 240px;
+  left: 200px;
+  width: 1350px;
   height: 800px;
-  overflow-y: auto;
+  overflow: clip;
+  border-radius: 10px;
 }
 
 .map_content p {
@@ -27,8 +28,9 @@
 
 .vida_map {
   position: absolute;
-  left: 160px;
-  width: 1320px;
+  left: -120px;
+  width: 1600px;
+  border-radius: 10px;
 }
 
 .map_background {
@@ -38,13 +40,17 @@
   background-color: rgba(0, 0, 0, 0.264);
 }
 
-.map-active_background {
+.map-active_btn-background {
   position: absolute;
-  top: 930px;
-  right: 5px;
-  width: 140px;
-  height: 140px;
-  filter: blur(3px);
-  border-radius: 100px;
-  background-color: #b9b7b7;
+  top: 910px;
+  right: -5px;
+  width: 160px;
+  height: 160px;
+  filter: blur(25px);
+  border-radius: 150px;
+}
+
+.map_arrow {
+  position: absolute;
+  z-index: 9999;
 }

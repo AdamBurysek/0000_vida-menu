@@ -22,19 +22,19 @@ const SectionBadge: React.FC<SectionInfoProps> = ({
 }) => {
   return (
     <div className="top-bar_badge">
-      <VIDAhexagonImg color={sectionInfo.color}></VIDAhexagonImg>
+      <VIDAhexagonImg color={sectionInfo.color} />
       <div className="top-bar_badge_image">
         {sectionInfo.label_en === "human" && (
-          <HumanImage color={sectionInfo.color}></HumanImage>
+          <HumanImage color={sectionInfo.color} />
         )}
         {sectionInfo.label_en === "civilisation" && (
-          <CivilisationImage color={sectionInfo.color}></CivilisationImage>
+          <CivilisationImage color={sectionInfo.color} />
         )}
         {sectionInfo.label_en === "planet" && (
-          <PlanetImage color={sectionInfo.color}></PlanetImage>
+          <PlanetImage color={sectionInfo.color} />
         )}
         {sectionInfo.label_en === "microworld" && (
-          <MicroworldImage color={sectionInfo.color}></MicroworldImage>
+          <MicroworldImage color={sectionInfo.color} />
         )}
       </div>
       <h5

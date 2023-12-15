@@ -4,6 +4,12 @@
 
 add section color into props
 
+## 1.2.0
+
+code refactoring
+add Vida Maps for all languages
+add arrow into Vida Map, thats show exhibit postion
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

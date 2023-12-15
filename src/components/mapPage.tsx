@@ -1,9 +1,14 @@
+import VidaMapCZ from "../img/vida_map-cz.webp";
+import VidaMapEN from "../img/vida_map-en.webp";
+import VidaMapDE from "../img/vida_map-de.webp";
+import { MapArrow } from "../img/mapArrow";
 import "./mapPage.css";
-import VIDAmap from "../img/VIDAmap.png";
 
 interface MapPageProps {
   activePage: string;
   language: string;
+  exhibitPostion: any;
+  sectionColor: string;
 }
 
 const MapPage: React.FC<MapPageProps> = (props) => {
@@ -15,13 +20,42 @@ const MapPage: React.FC<MapPageProps> = (props) => {
     >
       <div className="map_background">
         <div className="map_content">
-          <img
-            className="vida_map"
-            src={VIDAmap}
-            alt=""
-          />
+          <span
+            className="map_arrow"
+            style={{
+              left: props.exhibitPostion.x,
+              top: props.exhibitPostion.y,
+            }}
+          >
+            <MapArrow />
+          </span>
+          {props.language === "cz" && (
+            <img
+              className="vida_map"
+              src={VidaMapCZ}
+              alt="VIDA MAP"
+            />
+          )}
+          {props.language === "en" && (
+            <img
+              className="vida_map"
+              src={VidaMapEN}
+              alt="VIDA MAP"
+            />
+          )}
+          {props.language === "de" && (
+            <img
+              className="vida_map"
+              src={VidaMapDE}
+              alt="VIDA MAP"
+            />
+          )}
         </div>
-        <div className="map-active_background"></div>
+
+        <div
+          className="map-active_btn-background"
+          style={{ backgroundColor: props.sectionColor }}
+        ></div>
       </div>
     </div>
   );
