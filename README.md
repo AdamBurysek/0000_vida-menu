@@ -10,6 +10,10 @@ code refactoring
 add Vida Maps for all languages
 add arrow into Vida Map, thats show exhibit postion
 
+## 1.2.1
+
+fixed bug with stroke-width in map arrow image
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
